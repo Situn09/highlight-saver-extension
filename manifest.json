@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Website Highlight Saver",
+  "version": "1.0",
+  "description": "Highlight text on any website and save it locally. View and manage highlights from the extension popup.",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Website Highlight Saver"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "all_frames": true,
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

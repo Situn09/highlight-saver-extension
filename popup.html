@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Website Highlight Saver</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Highlights</h1>
+
+      <div id="highlights-container"></div>
+
+      <div id="summary-section">
+        <h2>AI Summary (optional)</h2>
+        <input
+          type="password"
+          id="apiKey"
+          placeholder="OpenAI API key"
+          autocomplete="off"
+        />
+        <button id="summarizeBtn">Summarize</button>
+        <div id="summaryResult"></div>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
